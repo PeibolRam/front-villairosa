@@ -1,0 +1,134 @@
+.lotes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 3em 0;
+
+  .logo-rosa {
+    margin: 3em auto 0.5em;
+    width: 200px;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0.5em auto;
+    font-family: Miracle;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin: 0.5em auto 0;
+    font-family: Miracle;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0.5em auto;
+    color: #ff4543;
+    font-style: italic;
+  }
+
+  p {
+    width: 50%;
+    margin: 1em auto;
+    line-height: 2rem;
+  }
+
+  .map {
+    width: 100%;
+    img {
+      width: 80%;
+      margin: 1em auto;
+    }
+  }
+
+  hr {
+    height: 2px;
+    background-color: #afa7a4;
+    width: 80%;
+    border: none;
+  }
+
+  .plan-maestro {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 2em auto;
+
+    .plan-maestro-left {
+      margin: 1em auto;
+      text-align: left;
+
+      h2 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin: 1em 0 0;
+        font-family: Miracle;
+      }
+
+      ul {
+        list-style: disc;
+        text-align: left;
+
+        li::marker {
+          font-size: 3rem;
+        }
+        li:first-child::marker {
+          color: #201f2f;
+        }
+        li:nth-child(2)::marker {
+          color: #edbbb9;
+        }
+        li:nth-child(3)::marker {
+          color: #6f6489;
+        }
+        li:nth-child(4)::marker {
+          color: #a89bad;
+        }
+        li:nth-child(5)::marker {
+          color: #ff8b89;
+        }
+        li:nth-child(6)::marker {
+          color: #5253c6;
+        }
+      }
+    }
+
+    .plan-maestro-right {
+      width: 100%;
+
+      img {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .lotes {
+    .map {
+      img {
+        max-width: 768px;
+      }
+    }
+    .plan-maestro {
+      flex-direction: row;
+      padding: 0 3em;
+
+      .plan-maestro-left,
+      .plan-maestro-right {
+        width: 50%;
+      }
+
+      .plan-maestro-left {
+        padding: 0 0 0 5em;
+      }
+    }
+  }
+}

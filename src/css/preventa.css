@@ -1,0 +1,66 @@
+.preventa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f0f0f3;
+  padding: 2em;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0.5em auto;
+    font-family: Miracle;
+  }
+  .preventa-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: #fff;
+      max-width: 300px;
+      overflow: hidden;
+      margin: 1em;
+      padding-bottom: 1em;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin: 0.5em auto;
+        letter-spacing: 0.25em;
+      }
+
+      p {
+        color: #606060;
+      }
+
+      h3 {
+        font-size: 2rem;
+        font-weight: 400;
+        margin: 0.5em auto;
+      }
+      h6 {
+        font-size: 0.25rem;
+        font-weight: 400;
+      }
+    }
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+}

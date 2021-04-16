@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["ESNext", "dom", "dom.iterable"],
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "baseUrl": "./",
+    "outDir": "./src/.declarations",
+    "rootDir": "./src",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "plugins": [
+      {
+        "name": "ts-lit-plugin",
+        "strict": true
+      }
+    ],
+    "paths": {
+        "@css": ["./src/css"],
+        "@lib": ["./src/lib"],
+        "@components": ["./src/components"],
+        "@src": ["./src"]
+      },
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["dist", "node_modules", "out", "temp", "webpack"],
+}

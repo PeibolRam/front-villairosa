@@ -1,0 +1,173 @@
+.casa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1em 0;
+
+  h1 {
+    font-size: 5rem;
+    font-weight: 500;
+    margin: 1em auto 0;
+    font-family: Miracle;
+  }
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.casa-txt {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 1em auto;
+    font-family: Miracle;
+  
+  }
+
+  ul {
+    list-style: disc;
+    margin: 0 auto 2em;
+
+    li {
+      margin: 0.5em auto;
+    }
+  }
+}
+
+.desk-img {
+  display: none;
+}
+
+.grid-imgs {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .slideshow-container {
+    display: none;
+  }
+
+  .desk-img {
+    display: flex;
+    margin: 1em auto;
+  }
+  .desk-casa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    .casa-txt {
+      width: 50%;
+      h2 {
+        margin: 0 auto;
+
+      }
+      ul{
+        margin: 1em auto;
+      }
+    }
+
+    .grid-imgs {
+      overflow: hidden;
+      display: grid;
+      width: 50%;
+      height: 100%;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50%;
+      grid-gap: 1em 1em;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .casa {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}

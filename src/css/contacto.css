@@ -1,0 +1,98 @@
+.contacto {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .paralax-main {
+    color: #fff;
+    img {
+      width: 100px;
+      margin: 1em auto;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 500;
+      margin: 0.5em auto;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: left;
+
+      input[type="text"],
+      textarea {
+        background: transparent;
+        border: solid 1px #fff;
+        padding: 1em;
+        margin: 1em 0;
+        width: 100%;
+
+        &::placeholder {
+          /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: #fff;
+          opacity: 1; /* Firefox */
+        }
+      }
+      input[type="submit"] {
+        padding: 1em;
+        background-color: #edbbb9;
+        color: #201f2f;
+        border: none;
+
+        &:hover {
+          background-color: #201f2f;
+          color: #edbbb9;
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    align-items: flex-start;
+
+    .paralax-main {
+      padding: 1em;
+    }
+  }
+  @media (min-width: 1440px) {
+    align-items: center;
+
+  }
+}
+
+.contacto-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  text-align: center;
+
+  .contacto-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em auto;
+
+    img{
+        margin: 1em auto;
+    }
+    p{
+        line-height: 1.5em;
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  @media (min-width: 1440px) {
+    max-width: 1440px;
+    margin: 1em auto;
+  }
+}

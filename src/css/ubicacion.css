@@ -1,0 +1,53 @@
+.ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .ubicacion-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 1em 0;
+
+    h1 {
+      font-family: Miracle;
+      font-size: 3em;
+      margin: 1em 0;
+    }
+    img {
+      width: 100px;
+      margin: 3em auto 1em;
+    }
+    p {
+      margin: 1em 0;
+    }
+    
+
+    @media (min-width: 768px) {
+      
+    }
+  }
+
+  .ubicacion-right {
+    height: 400px;
+    width: 100%;
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    .ubicacion-left{
+      width: 50%;
+    }
+    .ubicacion-right{
+      width: 40%;
+    }
+  }
+}
